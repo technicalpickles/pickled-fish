@@ -1,4 +1,4 @@
-#  Custom script sourced after shell start
+#  init.fish - Custom script sourced after shell start
 
 # we like vim. see pickled-vim for settings
 if which mvim >/dev/null
