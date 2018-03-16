@@ -1,3 +1,4 @@
+package foreign-env
 package nodenv
 package rbenv
 theme bobthefish
