@@ -1,11 +1,11 @@
 #  Custom script sourced after shell start
 
 # we like vim. see pickled-vim for settings
-if which -s mvim
+if which mvim >/dev/null
     set -Ux EDITOR "mvim -f"
-else if which -s vim
+else if which -s vim >/dev/null
     set -Ux EDITOR vim
-else if which -s vi
+else if which -s vi >/dev/null
     set -Ux EDITOR vi
 end
 
