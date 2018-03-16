@@ -1,6 +1,10 @@
-#  init.fish - Custom script sourced after shell start
+# init.fish - Custom script sourced after shell start
+#
+# It's highly recommended that your custom startup commands go into init.fish
+# file instead of ~/.config/fish/config.fish, as this allows you to keep the
+# whole $OMF_CONFIG directory under version control.
 
-# we like vim. see pickled-vim for settings
+# we like vim. see https://github.com/technicalpickles/pickled-vim for settings
 if which mvim >/dev/null
     set -Ux EDITOR "mvim -f"
 else if which -s vim >/dev/null
