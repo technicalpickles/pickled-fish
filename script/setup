@@ -1,0 +1,10 @@
+#!/bin/sh
+if [ "$(uname -s)" = "Darwin" ]; then
+  brew bundle check >/dev/null 2>&1  || {
+    echo "==> Installing Homebrew dependencies…"
+    brew bundle
+  }
+fi
+# TODO for ubuntu support use https://launchpad.net/~fish-shell/+archive/ubuntu/release-2
+
+# TODO link some stufff
